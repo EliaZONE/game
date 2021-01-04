@@ -67,7 +67,15 @@ h3{
          text-align: right;
          letter-spacing: 0.1em;
          color: #fff;
-         padding: 10px;
+         padding: 5px 0px;
+         background-image: linear-gradient(currentColor, currentColor);
+         background-position: 0% 100%;
+         background-repeat: no-repeat;
+         background-size: 0% 2px;
+         transition: background-size .3s;
+         &:hover{
+            background-size: 100% 2px;
+         }
       }
       margin-right: 50px;
       &:last-child{
@@ -596,12 +604,22 @@ h3{
 }
 .footer__list li{
    margin-right: 40px;
+   padding: 10px 0;
    font-weight: bold;
    font-size: 12px;
    line-height: 16px;
    text-align: right;
    letter-spacing: 0.1em;
    text-transform: uppercase;
+   background-image: linear-gradient(currentColor, currentColor);
+   background-position: 0% 100%;
+   background-repeat: no-repeat;
+   background-size: 0% 2px;
+   transition: background-size .3s;
+   &:hover{
+      background-size: 100% 2px;
+      color: #fff;
+   }
    &:last-child{
       margin: 0;
    }
@@ -611,6 +629,9 @@ h3{
 }
 .footer__subscribe a{
    margin-right: 50px;
+   &:hover .filter-red{
+      filter: invert(31%) sepia(88%) saturate(7467%) hue-rotate(356deg) brightness(99%) contrast(120%);
+   }
    &:last-child{
       margin: 0;
    }
@@ -634,16 +655,29 @@ h3{
    display: flex;
    margin-top: 30px;
    & li{
+      text-transform: uppercase;
+      border-right: 1px solid #fff;
       font-family: 'Open Sans';
       font-weight: bold;
       font-size: 12px;
       line-height: 16px;
       text-align: right;
       letter-spacing: 0.1em;
-      text-transform: uppercase;
+      &:last-child{
+         border-right: 0;
+      }
       & a{
          color: #fff;
-         margin-left: 5px;
+         padding: 10px 0px;
+         margin: 0 10px;
+         background-image: linear-gradient(currentColor, currentColor);
+         background-position: 0% 100%;
+         background-repeat: no-repeat;
+         background-size: 0% 2px;
+         transition: background-size .3s;
+         &:hover{
+            background-size: 100% 2px;
+         }
       }
    }
 }
