@@ -523,6 +523,15 @@ h3 {
   margin: 0;
 }
 
+.survive__column-img a:hover .xbox-green {
+  -webkit-filter: invert(32%) sepia(78%) saturate(864%) hue-rotate(80deg) brightness(92%) contrast(94%);
+          filter: invert(32%) sepia(78%) saturate(864%) hue-rotate(80deg) brightness(92%) contrast(94%);
+}
+
+.survive__column-img a:hover .steam-blue {
+  opacity: 0.7;
+}
+
 .survive__column-img:before {
   content: '';
   top: 0;

@@ -106,6 +106,12 @@ h3{
       &:last-child{
          margin: 0;
       }
+      &:hover .xbox-green{
+         filter: invert(32%) sepia(78%) saturate(864%) hue-rotate(80deg) brightness(92%) contrast(94%);  
+      }
+      &:hover .steam-blue{
+         opacity: 0.7;
+      }
    }
    &:before{
       content: '';
