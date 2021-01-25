@@ -595,7 +595,7 @@ h3 {
 }
 
 .survive__body-button a:hover {
-  background: #c90909;
+  background: #e93730;
 }
 
 .survive__body-cursor {
@@ -791,6 +791,8 @@ h3 {
 }
 
 .features__row details p {
+  -webkit-animation: spoiler 1s;
+          animation: spoiler 1s;
   margin: 15px 0;
   font-family: 'Open Sans';
   font-size: 18px;
@@ -798,6 +800,24 @@ h3 {
   text-align: justify;
   color: #FFFFFF;
   font-weight: normal;
+}
+
+@-webkit-keyframes spoiler {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes spoiler {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /**************************SYSTEM*************************/
@@ -891,7 +911,7 @@ h3 {
 }
 
 .quotes__column-about a:hover {
-  background: #c90909;
+  background: #e93730;
 }
 
 .quotes__title {
@@ -1156,7 +1176,7 @@ h3 {
 }
 
 .subscribe__form button:hover {
-  background: #c90909;
+  background: #e93730;
 }
 
 /*****************FOOTER******************/
@@ -1258,7 +1278,21 @@ h3 {
   font-size: 14px;
   line-height: 19px;
   color: #FFF;
+}
+
+.footer__copy span {
   opacity: 0.5;
+}
+
+.footer__copy a {
+  color: #fff;
+  -webkit-transition: 0.2s all linear;
+  transition: 0.2s all linear;
+}
+
+.footer__copy a:hover {
+  color: #e93730;
+  border-bottom: 1px solid #e93730;
 }
 
 .footer__submenu {

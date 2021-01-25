@@ -166,7 +166,7 @@ h3{
          margin: 0 10px;
       }
       &:hover{
-         background: #c90909;
+         background: #e93730;
       }
    }
 }
@@ -308,6 +308,7 @@ h3{
       margin: 0;
    }
    & p{
+      animation: spoiler 1s;
       margin: 15px 0;
       font-family: 'Open Sans';
       font-size: 18px;
@@ -316,6 +317,10 @@ h3{
       color: #FFFFFF;
       font-weight: normal;
    }
+}
+@keyframes spoiler{
+   0% {opacity: 0;}
+   100% {opacity: 1;}
 }
 
 /**************************SYSTEM*************************/
@@ -400,7 +405,7 @@ h3{
       text-transform: capitalize;
       color: #1A1917;
       &:hover{
-         background: #c90909;
+         background: #e93730;
       }
    }
 }
@@ -589,7 +594,7 @@ h3{
       text-transform: capitalize;
       color: #1A1917;
       &:hover{
-         background: #c90909;
+         background: #e93730;
       }
    }
 }
@@ -667,7 +672,17 @@ h3{
    font-size: 14px;
    line-height: 19px;
    color: #FFF;
-   opacity: 0.5;
+   span {
+      opacity: 0.5;
+   }
+   a {
+      color: #fff;
+      transition: 0.2s all linear;
+   &:hover{
+      color: #e93730;
+      border-bottom: 1px solid #e93730;
+   }
+   }
 }
 .footer__submenu {
    display: flex;
