@@ -295,18 +295,8 @@ h3{
    color: #FFF;
    margin-bottom: 70px;
 }
-.features__list {
-}
-.features__list li{
-   &:before{
-      content: '';
-      background: url(../images/svg/Ellipse.svg) left no-repeat;
-      left: 0;
-      padding-left: 40px;
-   }
-   &:hover:before{
-      background: url(../images/svg/Ellipse1.svg) left no-repeat;
-   }
+.features__row details{
+   cursor: pointer;
    font-family: 'Bebas Neue';
    font-weight: bold;
    font-size: 36px;

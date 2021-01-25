@@ -775,7 +775,8 @@ h3 {
   margin-bottom: 70px;
 }
 
-.features__list li {
+.features__row details {
+  cursor: pointer;
   font-family: 'Bebas Neue';
   font-weight: bold;
   font-size: 36px;
@@ -785,22 +786,11 @@ h3 {
   margin-bottom: 40px;
 }
 
-.features__list li:before {
-  content: '';
-  background: url(../images/svg/Ellipse.svg) left no-repeat;
-  left: 0;
-  padding-left: 40px;
-}
-
-.features__list li:hover:before {
-  background: url(../images/svg/Ellipse1.svg) left no-repeat;
-}
-
-.features__list li:last-child {
+.features__row details:last-child {
   margin: 0;
 }
 
-.features__list li p {
+.features__row details p {
   margin: 15px 0;
   font-family: 'Open Sans';
   font-size: 18px;
