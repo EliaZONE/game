@@ -308,7 +308,7 @@ h3{
       margin: 0;
    }
    & p{
-      animation: spoiler 1s;
+      animation: spoiler .9s;
       margin: 15px 0;
       font-family: 'Open Sans';
       font-size: 18px;
@@ -319,7 +319,7 @@ h3{
    }
 }
 @keyframes spoiler{
-   0% {opacity: 0;}
+   0% {opacity: 0.1;}
    100% {opacity: 1;}
 }
 
@@ -377,10 +377,11 @@ h3{
 }
 
 .quotes-subscribe__body {
-   background: url(../images/bgimage-3.jpg) bottom / cover no-repeat;
-   min-height: 200vh;
+   background: url(../images/bgimage-3.jpg) bottom / contain no-repeat;
+   background-size: 100%;
 }
 .quotes {
+   min-height: 100vh;
 }
 .quotes__body {
 }
