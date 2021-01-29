@@ -815,6 +815,10 @@ h3 {
     line-height: 20px;
     padding: 12px;
   }
+  .survive__body-button a span:after {
+    opacity: 0.5;
+    border: 0.642383px solid #1A1917;
+  }
 }
 
 @media (max-width: 479.98px) {

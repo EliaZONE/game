@@ -368,6 +368,10 @@ h3{
       font-size: 15px;
       line-height: 20px;
       padding: 12px;
+      & span:after {
+         opacity: 0.5;
+         border: 0.642383px solid #1A1917;
+      }
    }
 }
 
