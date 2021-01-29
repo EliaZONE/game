@@ -275,6 +275,13 @@ h3{
 
 .survive__body {
 }
+
+@media (max-width: 479.98px) {
+   .survive__body {
+      padding-top: 20px;
+   }
+}
+
 .survive__body-row {
    display: flex;
    flex-direction: column;
