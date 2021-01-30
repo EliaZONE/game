@@ -114,7 +114,7 @@ h3{
    }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768.98px) {
    .survive__column-menu {
       padding: 100px 20px;
    & li a {
@@ -190,7 +190,7 @@ h3{
    }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768.98px) {
    .survive__column-img {
       display: none;
       &.active {
@@ -292,7 +292,7 @@ h3{
    margin-top: 0;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768.98px) {
    .survive__body-row {
       margin-top: 110px;
    }
@@ -314,7 +314,7 @@ h3{
    margin-bottom: 20px;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768.98px) {
    .survive__body-title h1 {
       font-size: 50px;
       line-height: 50px;
@@ -372,7 +372,7 @@ h3{
    }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768.98px) {
    .survive__body-button a {
       font-size: 15px;
       line-height: 20px;
@@ -472,10 +472,22 @@ h3{
    text-transform: uppercase;
 }
 
-@media (max-width: 767.98px) {
-   .whois__subtitle h3{
-      line-height: 18px;
-   }
+@media (max-width: 768.98px) {
+   .whois__subtitle {
+      margin-top: 30px;
+         & h3{
+         line-height: 18px;
+      }
+   }  
+}
+
+@media (max-width: 477.98px) {
+   .whois__subtitle {
+      margin-top: 10px;
+         & h3{
+         line-height: 18px;
+      }
+   }  
 }
 
 .whois__title {
@@ -605,7 +617,7 @@ h3{
    margin-bottom: 15px;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768.98px) {
    .features__title {
       font-size: 20px;
       line-height: 20px;
@@ -638,7 +650,7 @@ h3{
    margin-bottom: 70px;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768.98px) {
    .features__text {
       font-size: 50px;
       line-height: 50px;
@@ -680,10 +692,14 @@ h3{
    100% {opacity: 1;}
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768.98px) {
    .features__row details {
-      font-size: 50px;
-      line-height: 50px;
+      font-size: 28px;
+      line-height: 25px;
+      & p {
+         font-size: 16px;
+         line-height: 18px;
+      }
    }
 }
 
@@ -718,7 +734,7 @@ h3{
    margin-bottom: 15px;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768.98px) {
    .system__title h3{
       font-size: 20px;
       line-height: 20px;
@@ -744,7 +760,7 @@ h3{
    margin-bottom: 50px;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768.98px) {
    .system__subtitle{
       font-size: 60px;
       line-height: 60px;
@@ -781,12 +797,26 @@ h3{
    }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768.98px) {
    .system__table {
       margin-right: 0;
+      & span {
+         font-size: 18px;
+         line-height: 18px;
+      }
    }
 }
 
+@media (max-width: 478.98px) {
+   .system__table {
+      & span {
+         font-size: 14px;
+         line-height: 16px;
+      }
+   }
+}
+
+//********************* QUOTES ***********************//
 .quotes-subscribe__body {
    background: url(../images/bgimage-3.jpg) bottom / cover no-repeat;
 }
@@ -829,6 +859,7 @@ h3{
 
 @media (max-width: 822.01px) {
    .quotes__column-about {
+      margin-top: 30px;
       padding-right: 0;
       flex: 1 1 auto;
       & a {
@@ -843,6 +874,7 @@ h3{
 
 @media (max-width: 479.98px) {
    .quotes__column-about {
+      margin-top: 10px;
       & a {
          display: flex;
          justify-content: center;
@@ -1129,6 +1161,7 @@ h3{
 }
 .subscribe__row {
    display: flex;
+   flex-direction: column;
 }
 
 .subscribe__img {
@@ -1146,13 +1179,15 @@ h3{
 
 @media (max-width: 847.98px) {
    .subscribe__subscribe {
+      margin-top: 30%;
       padding-left: 40%;
    }
 }
 
 @media (max-width: 479.98px) {
    .subscribe__subscribe {
-      padding-left: 30%;
+      margin-top: 15%;
+      padding-left: 35%;
    }
 }
 
@@ -1201,8 +1236,8 @@ h3{
 
 @media (max-width: 479.98px) {
    .subscribe__subtitle{
-      font-size: 33px;
-      line-height: 33px;
+      font-size: 20px;
+      line-height: 20px;
       max-width: 100px;
    }
 }
@@ -1227,12 +1262,20 @@ h3{
       font-size: 14px;
       line-height: 19px;
       max-width: 200px;
+      margin-bottom: 170px;
+   }
+}
+
+@media (max-width: 320.98px) {
+   .subscribe__text {
+      margin-bottom: 100px;
    }
 }
 
 .subscribe__form {
    display: flex;
    justify-content: space-between;
+   padding-left: 40%;
    & input{
       width: 100%;
       height: 60px;
@@ -1271,11 +1314,23 @@ h3{
    }
 }
 
+@media (max-width: 1100px) {
+   .subscribe__form {
+      padding-left: 47%;
+   }
+}
+
+
 @media (max-width: 847.98px) {
    .subscribe__form {
+      padding-left: 0;
       flex-direction: column;
       & input {
          margin-bottom: 20px;
+         width: 100%;
+      }
+      & button {
+         width: 100%;
       }
    }
 }

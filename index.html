@@ -5,44 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <title>SURVIVE</title>
-    <meta name="description" content="">
+    <meta name="description" content="The intriguing SURVIVAL game will amaze a huge number of players with its diverse world and various interactions with characters.">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="wrapper">
         <div class="survive">
             <div class="container">
-                    <div class="survive__header">
-                        <div class="survive__header-row">
-                            <div class="survive__column icon">
-                                <a href="#"><img src="./images/logo.png" alt="logo"></a>
+                <div class="survive__header">
+                    <div class="survive__header-row">
+                        <div class="survive__column icon">
+                            <a href="#"><img src="./images/logo.png" alt="logo"></a>
+                        </div>
+                        <div class="survive__column">
+                            <ul class="survive__column-menu">
+                                <li><a href="#">Main</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Game Features</a></li>
+                                <li><a href="#">System requirements</a></li>
+                                <li><a href="#">quotes</a></li>
+                            </ul>
+                        </div>
+                        <div class="survive__column survive__column-columns">
+                            <div class="survive__column-select">
+                                <select onchange="if (this.value) window.location.href = this.value" name="lang" id="lang" class="survive__column-lang">
+                                    <option value="index.html" selected>ENG</option>
+                                    <option value="index-rus.html">RUS</option>
+                                </select>
                             </div>
-                            <div class="survive__column">
-                                <ul class="survive__column-menu">
-                                    <li><a href="#">Main</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Game Features</a></li>
-                                    <li><a href="#">System requirements</a></li>
-                                    <li><a href="#">quotes</a></li>
-                                </ul>
+                            <div class="survive__column-img">
+                                <a href="#"><img src="./images/svg/xbox-icon.svg" class="xbox-green" alt=""></a>
+                                <a href="#"><img src="./images/svg/steam-icon.svg" class="steam-blue" alt=""></a>
                             </div>
-                            <div class="survive__column survive__column-columns">
-                                <div class="survive__column-select">
-                                    <select onchange="if (this.value) window.location.href = this.value" name="lang" id="lang" class="survive__column-lang">
-                                        <option value="index.html" selected>ENG</option>
-                                        <option value="index-rus.html">RUS</option>
-                                    </select>
-                                </div>
-                                <div class="survive__column-img">
-                                    <a href="#"><img src="./images/svg/xbox-icon.svg" class="xbox-green" alt=""></a>
-                                    <a href="#"><img src="./images/svg/steam-icon.svg" class="steam-blue" alt=""></a>
-                                </div>
-                                <div class="burger">
-                                    <span></span>
-                                </div>
+                            <div class="burger">
+                                <span></span>
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
 
             <div class="survive__body">
@@ -261,11 +261,11 @@
                                 <div class="subscribe__text">
                                     In order to start receiving our news, all you have to do is enter your email address. Everything else will be taken care of by us. We will send you emails containing information about game. We don’t spam.
                                 </div>
-                                <form action="post" class="subscribe__form">
-                                    <input type="email" placeholder="Your email address">
-                                    <button type="submit">Subscribe now</button>
-                                </form>
                             </div>
+                            <form action="post" class="subscribe__form">
+                                <input type="email" placeholder="Your email address">
+                                <button type="submit">Subscribe now</button>
+                            </form>
                         </div>
                     </div>
                 </div>
