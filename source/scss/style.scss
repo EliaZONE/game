@@ -187,6 +187,9 @@ h3{
 @media (max-width: 1100px) {
    .survive__column-img {
       display: none;
+      &.active {
+         bottom: 25px;
+      }
    }
 }
 

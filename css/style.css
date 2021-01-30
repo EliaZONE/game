@@ -609,6 +609,9 @@ h3 {
   .survive__column-img {
     display: none;
   }
+  .survive__column-img.active {
+    bottom: 25px;
+  }
 }
 
 @media (max-width: 768.98px) {
