@@ -36,4 +36,5 @@ document.querySelector('.survive__column-menu').addEventListener('click', functi
     if('.survive__column-menu.animate') {
         document.querySelector('.survive__column-img').classList.remove('active');
         }
+        document.querySelector('.burger span').classList.remove('active');
 })

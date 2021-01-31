@@ -1113,6 +1113,9 @@ h3 {
 
 .features__title {
   margin-top: 100px;
+}
+
+.features__title h3 {
   font-family: 'Bebas Neue';
   font-weight: bold;
   font-size: 24px;
@@ -1123,21 +1126,21 @@ h3 {
 }
 
 @media (max-width: 768.98px) {
-  .features__title {
+  .features__title h3 {
     font-size: 20px;
     line-height: 20px;
   }
 }
 
 @media (max-width: 479.98px) {
-  .features__title {
+  .features__title h3 {
     font-size: 18px;
     line-height: 18px;
   }
 }
 
 @media (max-width: 374.98px) {
-  .features__title {
+  .features__title h3 {
     margin-top: 60px;
     font-size: 18px;
     line-height: 18px;
@@ -1242,7 +1245,7 @@ h3 {
   min-height: 100vh;
 }
 
-.system__title {
+.system__title h3 {
   margin-top: 70px;
   font-family: 'Bebas Neue';
   font-style: normal;
