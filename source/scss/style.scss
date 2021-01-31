@@ -57,10 +57,6 @@ h3{
    justify-content: space-between;
    align-items: center;
 }
-.survive__column {
-}
-.icon {
-}
 .survive__column-menu {
    display: flex;
    & li{
@@ -280,9 +276,6 @@ h3{
    }
 }
 
-.survive__body {
-}
-
 @media (max-width: 479.98px) {
    .survive__body {
       padding-top: 20px;
@@ -431,8 +424,7 @@ h3{
    background-size: cover;
    min-height: 100vh;
 }
-.whois__body {
-}
+
 .whois__row {
    display: flex;
    justify-content: space-between;
@@ -732,8 +724,7 @@ h3{
    background: url(../images/Group2.jpg) center / cover no-repeat;
    min-height: 100vh;
 }
-.system__body {
-}
+
 .system__title h3{
    margin-top: 70px;
    font-family: 'Bebas Neue';
@@ -838,10 +829,7 @@ h3{
 .quotes-subscribe__body {
    background: url(../images/bgimage-3.jpg) bottom / cover no-repeat;
 }
-.quotes {
-}
-.quotes__body {
-}
+
 .quotes__row {
    display: flex;
 }
@@ -1097,8 +1085,6 @@ h3{
    }
 }
 
-.otzivi__twitter {
-}
 .otzivi__text {
    font-family: 'Open Sans';
    font-style: normal;
@@ -1175,15 +1161,11 @@ h3{
    }
 }
 
-.subscribe__body {
-}
 .subscribe__row {
    display: flex;
    flex-direction: column;
 }
 
-.subscribe__img {
-}
 .subscribe__subscribe {
    margin-top: 15%;
    padding-left: 40%;
@@ -1366,10 +1348,6 @@ h3{
 
 /*****************FOOTER******************/
 
-.footer {
-}
-.footer__menu {
-}
 .footer__row {
    display: flex;
    justify-content: space-between;
@@ -1381,9 +1359,6 @@ h3{
    .footer__row {
       flex-direction: column;
    }
-}
-
-.footer__icon{
 }
 
 @media (max-width: 1170px) {
