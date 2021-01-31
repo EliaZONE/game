@@ -2,7 +2,7 @@
 // АНИМАЦИЯ БУРГЕРА //
 document.querySelector('.burger').addEventListener('click', function () {
     document.querySelector('.burger span').classList.toggle('active');
-    })
+});
 
 // ВЫЕЗЖАЕТ МЕНЮ //
 document.querySelector('.burger').addEventListener('click', function(){
@@ -11,11 +11,11 @@ document.querySelector('.burger').addEventListener('click', function(){
     if('.survive__column-menu.animate') {
     document.querySelector('.survive__column-img').classList.toggle('active');
     }
-})
+});
 
 // ПЛАВНАЯ НАВИГАЦИЯ ПО САЙТУ //
 
-const smoothLinks = document.querySelectorAll('a[href^="#"]');
+const smoothLinks = document.querySelectorAll(['a[href="#top"], a[href="#about"], a[href="#features"], a[href="#system_req"], a[href="#quotes"]']);
 for (let smoothLink of smoothLinks) {
     smoothLink.addEventListener('click', function (e) {
         e.preventDefault();
@@ -37,4 +37,7 @@ document.querySelector('.survive__column-menu').addEventListener('click', functi
         document.querySelector('.survive__column-img').classList.remove('active');
         }
         document.querySelector('.burger span').classList.remove('active');
-})
+});
+
+// ОТКРЫВАТЬ ССЫЛКУ ГЛАВНОЙ СТРАНИЦЫ //
+
