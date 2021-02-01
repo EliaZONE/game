@@ -426,14 +426,12 @@ h3{
 }
 
 .whois__row {
-   margin-top: 180px;
    display: flex;
    justify-content: space-between;
 }
 
 @media (max-width: 1350.00px) {
    .whois__row {
-      margin-top: 0;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -463,7 +461,7 @@ h3{
    }
 }
 .whois__subtitle {
-   margin-top: 100px;
+   margin-top: 50px;
    font-family: 'Bebas Neue';
    font-weight: bold;
    line-height: 24px;
