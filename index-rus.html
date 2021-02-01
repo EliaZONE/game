@@ -85,9 +85,28 @@
                             </div>
                         </div>
                         <div class="whois__slider">
-                            <img src="./images/screenshot 1.png" alt="">
-                            <img src="./images/screenshot 2.png" alt="">
-                            <img src="./images/screenshot 3.png" alt="">
+                            <div class="item">
+                                <img src="./images/screenshot 1.png" alt="Первый слайд">
+                            </div>
+                        
+                            <div class="item">
+                                <img src="./images/screenshot 2.png" alt="Второй слайд">
+                            </div>
+                        
+                            <div class="item">
+                                <img src="./images/screenshot 3.png" alt="Третий слайд">
+                            </div>
+                        
+                            <a class="prev" onclick="minusSlide()">&#10094;</a>
+                            <a class="next" onclick="plusSlide()">&#10095;</a>
+
+                            <br>
+
+                            <div class="whois__slider-dots">
+                                <span class="whois__slider-dots-item" onclick="currentSlide(1)"></span> 
+                                <span class="whois__slider-dots-item" onclick="currentSlide(2)"></span> 
+                                <span class="whois__slider-dots-item" onclick="currentSlide(3)"></span> 
+                            </div>
                         </div>
                     </div>
                 </div>
