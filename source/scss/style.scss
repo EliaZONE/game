@@ -426,12 +426,14 @@ h3{
 }
 
 .whois__row {
+   margin-top: 180px;
    display: flex;
    justify-content: space-between;
 }
 
 @media (max-width: 1350.00px) {
    .whois__row {
+      margin-top: 0;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -450,6 +452,7 @@ h3{
 
 @media (max-width: 1350px) {
    .whois__content {
+      width: 100%;
       & hr {
          width: 200%;
          height: 3px;
