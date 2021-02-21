@@ -521,9 +521,10 @@ h3 {
     font-size: 52px;
     line-height: 100px;
   }
-  .survive__column-menu.animate {
-    left: 0;
-  }
+}
+
+.survive__column-menu.animate {
+  left: 0;
 }
 
 @media (max-width: 768.98px) {
@@ -559,7 +560,7 @@ h3 {
 
 @media (max-width: 1100px) {
   .survive__column-select:after {
-    margin-right: 60px;
+    margin-right: -5px;
   }
 }
 
@@ -595,7 +596,7 @@ h3 {
 }
 
 .survive__column-img.active {
-  display: block;
+  opacity: 1;
   z-index: 1;
   position: fixed;
   left: 100px;
@@ -608,7 +609,10 @@ h3 {
 
 @media (max-width: 1100px) {
   .survive__column-img {
-    display: none;
+    left: -100%;
+    -webkit-transition: left 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: left 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    opacity: 0;
   }
   .survive__column-img.active {
     bottom: 25px;
@@ -616,9 +620,6 @@ h3 {
 }
 
 @media (max-width: 768.98px) {
-  .survive__column-img {
-    display: none;
-  }
   .survive__column-img.active {
     left: 20px;
   }
@@ -925,10 +926,7 @@ h3 {
 }
 
 .whois__content hr {
-  width: 130%;
   margin-bottom: 60px;
-  position: relative;
-  z-index: 99;
 }
 
 @media (max-width: 1350px) {
@@ -936,7 +934,6 @@ h3 {
     width: 100%;
   }
   .whois__content hr {
-    width: 200%;
     height: 3px;
     border-radius: 2.34486px;
     background-color: #fff;
@@ -1190,7 +1187,6 @@ h3 {
 
 @media (max-width: 374.98px) {
   .features__title h3 {
-    margin-top: 60px;
     font-size: 18px;
     line-height: 18px;
   }
@@ -1308,7 +1304,7 @@ h3 {
 }
 
 @media (max-width: 768.98px) {
-  .system__title h3 {
+  .system__title h3 h3 {
     margin-top: 20px;
     font-size: 20px;
     line-height: 20px;
@@ -1316,7 +1312,7 @@ h3 {
 }
 
 @media (max-width: 479.98px) {
-  .system__title h3 {
+  .system__title h3 h3 {
     font-size: 18px;
     line-height: 18px;
   }
@@ -1604,29 +1600,32 @@ h3 {
       align-self: flex-end;
 }
 
-.column-2 {
-  -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-self: stretch;
-}
-
-.column-3 {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
 @media (max-width: 822.01px) {
   .column-1 {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
   }
+}
+
+.column-2 {
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+
+@media (max-width: 822.01px) {
   .column-2 {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
   }
+}
+
+.column-3 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .otzivi__row-rows {
@@ -1707,14 +1706,14 @@ h3 {
 }
 
 @media (max-width: 822.01px) {
-  .otzivi__about {
+  .otzivi__text {
     font-size: 16px;
     line-height: 22px;
   }
 }
 
 @media (max-width: 479.98px) {
-  .otzivi__about {
+  .otzivi__text {
     font-size: 14px;
     line-height: 19px;
   }
@@ -1732,14 +1731,14 @@ h3 {
 }
 
 @media (max-width: 822.01px) {
-  .otzivi__about {
+  .otzivi__date {
     font-size: 13px;
     line-height: 18px;
   }
 }
 
 @media (max-width: 479.98px) {
-  .otzivi__about {
+  .otzivi__date {
     font-size: 12px;
     line-height: 16px;
   }
@@ -1755,6 +1754,7 @@ h3 {
 @media (max-width: 847.98px) {
   .subscribe {
     background: url(../images/Group3.png) -200px no-repeat;
+    margin-bottom: 0px;
   }
 }
 
@@ -1862,7 +1862,7 @@ h3 {
   line-height: 22px;
   color: #FFF;
   padding-right: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
 }
 
 @media (max-width: 847.98px) {
@@ -2037,6 +2037,19 @@ h3 {
   display: flex;
 }
 
+@media (max-width: 797.98px) {
+  .footer__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 40px;
+  }
+}
+
 .footer__list li {
   margin-right: 40px;
   padding: 10px 0;
@@ -2069,16 +2082,6 @@ h3 {
 }
 
 @media (max-width: 797.98px) {
-  .footer__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 40px;
-  }
   .footer__list li {
     margin-right: 0;
   }
