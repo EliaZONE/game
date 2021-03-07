@@ -1826,8 +1826,8 @@ h3 {
   font-family: 'Bebas Neue';
   font-style: normal;
   font-weight: bold;
-  font-size: 80px;
-  line-height: 80px;
+  font-size: 50px;
+  line-height: 50px;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #FFF;
@@ -1836,8 +1836,8 @@ h3 {
 
 @media (max-width: 847.98px) {
   .subscribe__subtitle {
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 30px;
+    line-height: 30px;
   }
 }
 
@@ -2017,7 +2017,7 @@ h3 {
   }
 }
 
-@media (max-width: 1170px) {
+@media (max-width: 1300px) {
   .footer__icon {
     margin-bottom: 40px;
   }
